@@ -4,17 +4,26 @@
     display: flex;
     justify-content: space-between;
     padding: 2% 18%;
-    border-bottom:2px dashed lightgrey;
+    border-bottom:2px dashed @silver;
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items:center;
+        white-space:nowrap;
+    }
 }
 .ContainerNav nav{
     display:flex;
     justify-content: space-around;
-    margin:2%;
+    margin:20px;
+    
 }
 .ContainerNav nav a{
     display:flex;
     justify-content: space-around;
-    margin:0% 1%;
+    margin:0% 20px;
     width: 7vw;
     height:1vh;
     text-decoration: none;
