@@ -1,5 +1,8 @@
 .ContainerHeaderContent{
   padding: 0% 18%;
+  @media @mobile {
+    padding: 0% 10%;
+  }
 }
 .ContainerHeaderContent .LrgImg img{
   width:100%;
@@ -28,7 +31,7 @@
       width: 48%;
       padding-right: 1%;
       @media @mobile {
-        width:70%
+        width:80%
       }
     }
 
@@ -37,7 +40,7 @@
       padding-left: 1%;
       @media @mobile {
         padding-left:0;
-        width:70%;
+        width:80%;
       }
 
       img {
@@ -49,7 +52,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      display:flex;
+      flex-direction:column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -87,8 +93,8 @@
       width: 30%;
       margin-bottom: 30px;
       @media @mobile {
-        width:70%
-      }
+        width:70%;
+        }
       .btn {
         .parametricbtn(teal, white);
       }

@@ -173,6 +173,7 @@ img {
   justify-content: space-between;
   padding: 2% 18%;
   border-bottom: 2px dashed #C0C0C0;
+  white-space: nowrap;
 }
 @media (max-width: 500px) {
   .ContainerNav {
@@ -182,6 +183,7 @@ img {
     justify-items: center;
     align-items: center;
     white-space: nowrap;
+    padding: 2% 4%;
   }
 }
 .ContainerNav nav {
@@ -192,13 +194,14 @@ img {
 .ContainerNav nav a {
   display: flex;
   justify-content: space-around;
-  margin: 0% 20px;
+  margin: 0% 10px;
   width: 7vw;
   height: 1vh;
   text-decoration: none;
   color: black;
   font-size: 1.4rem;
   font-weight: bold;
+  margin: 0% 15px;
 }
 .footer {
   width: 100%;
@@ -213,6 +216,11 @@ img {
 }
 .ContainerHeaderContent {
   padding: 0% 18%;
+}
+@media (max-width: 500px) {
+  .ContainerHeaderContent {
+    padding: 0% 10%;
+  }
 }
 .ContainerHeaderContent .LrgImg img {
   width: 100%;
@@ -241,7 +249,7 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
-    width: 70%;
+    width: 80%;
   }
 }
 .home .content-section .img-content {
@@ -251,7 +259,7 @@ img {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     padding-left: 0;
-    width: 70%;
+    width: 80%;
   }
 }
 .home .content-section .img-content img {
@@ -260,6 +268,12 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
