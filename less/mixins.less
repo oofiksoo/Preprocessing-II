@@ -1,1 +1,18 @@
 // Mixins in here
+.parametricbtn(@color, @textcolor){
+    border:1px solid @color;
+    border-radius:10px;
+    background-color:@color;
+    color:@textcolor;
+    width:80%;
+    height:15%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items:center;
+    margin:2% 0;
+    font-size:1.4rem;
+    @media @mobile {
+        padding:3% 0;}
+    }

@@ -1,1 +1,37 @@
 // Navigation Styles here
+
+.ContainerNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 18%;
+    border-bottom:2px dashed @silver;
+    white-space:nowrap;
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items:center;
+        white-space:nowrap;
+        padding:2% 4%;
+    }
+    nav {
+        display:flex;
+        justify-content: space-around;
+        margin:20px;
+        a{
+            display:flex;
+            justify-content: space-around;
+            margin:0% 10px;
+            width: 7vw;
+            height:1vh;
+            text-decoration: none;
+            color:black;
+            font-size:1.4rem;
+            font-weight: bold;
+            @media @mobile {
+        }  margin:0% 15px;}
+    }
+}
+
+
